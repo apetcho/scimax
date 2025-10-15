@@ -39,11 +39,6 @@
 (use-package aggressive-indent
   :config (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode))
 
-;; [2023-12-11 Mon] I don't think we use this for anything. commenting out for now.
-;; see issue #487
-;; (use-package auto-complete
-;;   :diminish auto-complete-mode
-;;   :config (ac-config-default))
 
 (use-package avy)
 
@@ -130,11 +125,6 @@
 
 (use-package elfeed)
 
-;; Python editing mode
-;; (use-package elpy			;
-;;   :config
-;;   (elpy-enable))
-
 (use-package esup)
 
 ;; Provides functions for working with files
@@ -159,15 +149,10 @@
   :config
   (google-this-mode 1))
 
-;; (use-package help-fns+
-;;   :load-path scimax-dir)
-
 ;; Functions for working with hash tables
 (use-package ht)
 
 (use-package htmlize)
-
-;; (use-package hy-mode)
 
 (use-package hydra
   :init
@@ -177,10 +162,6 @@
   (require 'hydra-ox))
 
 (use-package ivy-hydra)
-
-;; (use-package jedi)
-
-;; (use-package jedi-direx)
 
 ;; Superior lisp editing
 (use-package lispy
@@ -390,10 +371,6 @@
   :ensure nil
   :bind ("H-k" . ox-clip-formatted-copy))
 
-;; (use-package scimax-contacts
-;;   :ensure nil
-;;   :load-path scimax-dir)
-
 (use-package scimax-email
   :ensure nil
   :load-path scimax-dir)
@@ -450,10 +427,6 @@
 (use-package scimax-ivy
   :ensure nil
   :load-path scimax-dir)
-
-;; (use-package scimax-lob
-;;   :ensure nil
-;;   :load-path scimax-dir)
 
 (use-package scimax-yas
   :ensure nil
